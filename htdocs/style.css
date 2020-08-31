@@ -1,0 +1,190 @@
+/*FONTS*/
+
+@font-face{
+    font-family: "Helvetica";
+    src: url('Helvetica.ttf');
+}
+
+@font-face{
+    font-family: "Hamburg-Hand-Regular";
+    src: url('HamburgHand-Regular.otf');
+}
+
+@font-face{
+    font-family: "Hamburg-Hand-Light";
+    src: url('HamburgHand-Light.otf');
+}
+
+@font-face{
+    font-family: "Oswald";
+    src: url('Oswald.ttf');
+}
+
+@font-face{
+    font-family: "Work Sans";
+    src: url('WorkSans-Regular.ttf');
+}
+
+/*GENERAL*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*PAGE*/
+
+/*First contact*/
+
+.homeimg {
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 100px 1fr; 
+  	background-image: url("suba.jpg");
+  	background-size: cover;
+}
+
+/*Logo*/
+
+#logo-wrap {
+	margin-top: 80px;
+	grid-column:2;
+	grid-row: 3;
+	display: flex;
+	justify-content: center;
+}
+
+
+#logo {
+	width: 300px;
+	height: 300px;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+	border-radius: 160px;
+}
+
+/*Nav*/
+
+#fullnav {
+	grid-row: 1;
+	grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.navitem {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: "Oswald";
+	font-size: 1.3em;
+	font-weight: 450;
+	transition: color .4s;
+	padding-left: 30px;
+	padding-right: 30px;
+	letter-spacing: 1px;
+}
+
+.navitem:hover {
+	color:  #333333;
+}
+
+
+/*Coopcycle button*/
+
+#button {
+	display: flex;
+	background-color: white;
+	flex-direction: row;
+	transition: background-color .4s;
+	border-radius: 2%;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+#button:hover {
+	background-color: transparent;
+	color: white;
+}
+
+
+#buttonlink {
+	text-decoration: none;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+#buttontext1 {
+	text-align: center;
+	color: #444444;
+	margin: 0;
+	font-size: 1.3em;
+	font-family: "Oswald";
+	font-weight: 450;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+#buttonbottom {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#buttonbottom img {
+	width: 22px;
+	height: 22px;
+	margin-left: 3px;
+	margin-top: 3px;
+}
+
+#cooptext {
+	text-align: center;
+	font-family: "Helvetica";
+	color: #333333;
+	margin: 0;
+	font-size: 0.8em;
+	padding-top: 8px;
+	padding-left: 14px;
+}
+
+#arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#arrowimg {
+	width: 100px;
+	align-self: flex-end;
+	margin-bottom: 8px;
+}
+
+#hamb {
+	grid-column: 5;
+	grid-row: 1;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	display: none;
+}
+
+#hambimg {
+	width: 55px;
+	margin-right: 25px;
+}
+
+/*CONTENT*/
+
+#wrap {
+	height: 2000px;
+}
