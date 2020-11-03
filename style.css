@@ -1,0 +1,275 @@
+/*FONTS*/
+
+@font-face{
+    font-family: "Helvetica";
+    src: url('Helvetica.ttf');
+}
+
+@font-face{
+    font-family: "Lato";
+    src: url('Lato-Regular.ttf');
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url('Raleway-VariableFont_wght.ttf');
+}
+
+@font-face{
+    font-family: "Hamburg-Hand-Regular";
+    src: url('HamburgHand-Regular.otf');
+}
+
+@font-face{
+    font-family: "abeatbyKai";
+    src: url('abeatbyKaiRegular.otf');
+}
+
+@font-face{
+    font-family: "Hamburg-Hand-Light";
+    src: url('HamburgHand-Light.otf');
+}
+
+@font-face{
+    font-family: "Montserrat";
+    src: url('Montserrat-Regular.ttf');
+}
+
+@font-face{
+    font-family: "Oswald";
+    src: url('Oswald.ttf');
+}
+
+@font-face{
+    font-family: "Work Sans";
+    src: url('WorkSans-Regular.ttf');
+}
+
+/*GENERAL*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*PAGE*/
+
+/*First contact*/
+
+.homeimg {
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+  	background-image: url("suba1.jpg");
+  	background-size: cover;
+}
+
+/*Logo*/
+
+#logo-wrap {
+	display: flex;
+	padding-left: 12px;
+}
+
+.logo {
+	width: 210px;
+	height: 210px;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+	border-radius: 160px;
+}
+
+/*Nav*/
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBT {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+  	transform: translateX(150%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#fullnav {
+	height: 100vh;
+	min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    padding-top: 20px;
+    animation: .6s ease-out 0s 1 slideInFromTop;
+    box-shadow: 0px 4px rgba(0,0,0, 0.3);
+    background-color: rgba(255,255,255, 0.85);
+}
+
+.navitem {
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: "Oswald";
+	font-size: 1.2em;
+	transition: color .4s;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 12px;
+	font-weight: 350;
+	letter-spacing: 1px;
+
+}
+
+.navitem:not(:last-child) {
+	border-bottom: solid 1px black;
+}
+
+.navitem:hover {
+	color: #DE5803;
+}
+
+#contacts-home {
+	display: flex;
+	flex-direction: column;
+	padding-top: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-right: 30px;
+}
+
+#contacts-home * {
+	margin-top: 3px;
+	margin-bottom: 2px;
+	padding-left: 12px;
+}
+
+#contacts-home > a > img {
+	width: 35px;
+	height: 35px;
+}
+
+.contacts-home-text {
+	color: black;
+	font-size: 1em;
+	font-family: "Oswald";
+	text-transform: uppercase;
+	font-weight: 350;
+	letter-spacing: 1px;
+}
+
+#fb-btn {
+	margin-top: 0;
+	padding-left: 0;
+}
+
+/*CONTENT*/
+
+#wrap {
+	width: 60vw;
+	margin-left: 22vw;
+	margin-right: 18vw;
+	margin-top: 70px;
+}
+
+.content-box {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Montserrat";
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	color: #DE5803;
+	font-weight: normal;
+}
+
+h2 {
+	text-align: center;
+	font-family: "Montserrat";
+	margin-bottom: 40px;
+	font-size: 1.6em;
+	color: #DE5803;
+	font-weight: normal;
+}
+
+#presentation-text {
+	font-family: "Work Sans";
+	font-size: 1.3em;
+	text-align: center;
+	line-height: 1.4;
+}
+
+#partner-box {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.partner-logo {
+	max-width: 160px;
+	max-height: 140px;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+#contacts-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#contacts-logo {
+	height: 200px;
+	width: 200px;
+	margin-bottom: 40px;
+}
+
+#contacts-text {
+	font-size: 1.4em;
+	font-family: "Montserrat";
+}
+
+.content-text {
+	font-family: "Work Sans";
+	font-size: 1.3em;
+	text-align: center;
+}
+
+footer {
+	background-color: black;
+}
+
+footer p {
+	font-size: 0.8em;
+	color: white;
+	text-align: center;
+	font-family: "Montserrat";
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+}
