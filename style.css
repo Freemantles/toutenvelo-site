@@ -71,8 +71,8 @@ body {
 
 #logo-wrap-mobile {
 	position: absolute;
-	width: 230px;
-	height: 230px;
+	width: 280px;
+	height: 280px;
 	top: 25%;
 	left: 50%;
 	margin-top: -115px; /* Negative half of height. */
@@ -95,7 +95,7 @@ body {
   }
 }
 
-@keyframes slideInFromBottom2 {
+@keyframes slideInFromBottom {
   0% {
     transform: translateY(100%);
   }
@@ -106,7 +106,8 @@ body {
 
 @keyframes slideInFromBottom2 {
   0% {
-    transform: translateY(200%);
+    transform: translateY(40%);
+    background-color: rgba(245, 245, 245, 0.1);
   }
   100% {
     transform: translateY(0);
@@ -225,7 +226,7 @@ body {
 #mobilenav {
 	position: fixed;
 	width: 70%;
-	height: 100px; 
+	height: 200px; 
 	left: 50%;
 	bottom: 150px;
 	margin-left: -35%;
@@ -274,7 +275,7 @@ body {
 }
 
 #hamb-menu {
-	height: 50%;
+	height: 40%;
 	width: 25%;
 	margin-left: 150px;
 }
@@ -289,7 +290,7 @@ body {
 	width: 70%;
 	height: 200px; 
 	left: 50%;
-	bottom: 250px;
+	bottom: 350px;
 	margin-left: -35%;
 	background-color: rgba(245, 245, 245, 0.95);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -453,7 +454,7 @@ footer p {
 	#wrap {
 		width: 80%;
 		margin: auto;
-		margin-bottom: 120px;
+		margin-bottom: 220px;
 	}
 	footer {
 		width: 100%;
