@@ -95,9 +95,18 @@ body {
   }
 }
 
-@keyframes slideInFromBottom {
+@keyframes slideInFromBottom2 {
   0% {
     transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom2 {
+  0% {
+    transform: translateY(200%);
   }
   100% {
     transform: translateY(0);
@@ -230,7 +239,19 @@ body {
 #contacts-home-mobile {
 	width: 50%;
 	display: flex;
-	margin-left: 40px;
+	margin-left: 30px;
+}
+
+#contacts-mobilenav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 20px;
+}
+
+#contacts-mobilenav a {
+	display: flex;
+	flex-direction: row;
 }
 
 .contacts-home-text-mobile {
@@ -242,6 +263,10 @@ body {
  	-moz-osx-font-smoothing: grayscale;
  	text-rendering: optimizeLegibility;
  	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+ 	margin-bottom: 5px;
+ 	margin-top: 7px;
+ 	border-bottom: solid 2px #DE5803;
+ 	text-decoration: none;
 }
 
 #contacts-home-mobile > a > img {
@@ -251,12 +276,25 @@ body {
 #hamb-menu {
 	height: 50%;
 	width: 25%;
-	margin-left: 40px;
+	margin-left: 150px;
 }
 
 #fb-btn-mobile {
 	display: flex;
 	align-items: center;
+}
+
+#mobile-nav-popup {
+	position: fixed;
+	width: 70%;
+	height: 200px; 
+	left: 50%;
+	bottom: 250px;
+	margin-left: -35%;
+	background-color: rgba(245, 245, 245, 0.95);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	display: none;
+	animation: .6s ease-out 0s 1 slideInFromBottom2;
 }
 
 
