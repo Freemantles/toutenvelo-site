@@ -484,15 +484,15 @@ footer p {
 
 @media screen and (max-width: 800px) {
 	h1 {
-		font-size: 2.7em;
+		font-size: 3em;
 		text-size-adjust: none;
 	}
 	h2 {
-		font-size: 2.3em;
+		font-size: 2.6em;
 		text-size-adjust: none;
 	}
 	.content-text {
-		font-size: 1.9em;
+		font-size: 2.3em;
 		text-size-adjust: none;
 	}
 }
