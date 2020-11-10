@@ -231,7 +231,7 @@ body {
 #mobilenav {
 	position: fixed;
 	width: 70%;
-	height: 140px; 
+	height: 160px; 
 	left: 50%;
 	bottom: 100px;
 	margin-left: -35%;
@@ -262,7 +262,7 @@ body {
 
 .contacts-home-text-mobile {
 	color: black;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-family: 'Rubik', sans-serif;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -276,7 +276,7 @@ body {
 }
 
 #contacts-home-mobile > a > img {
-	height: 100px;
+	height: 120px;
 }
 
 
@@ -296,12 +296,12 @@ body {
 	width: 70%;
 	height: 200px; 
 	left: 50%;
-	bottom: 220px;
+	bottom: 260px;
 	margin-left: -35%;
 	background-color: rgba(245, 245, 245, 0.95);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	display: none;
-	animation: .6s ease-out 0s 1 slideInFromBottom2;
+	animation: .3s ease-out 0s 1 slideInFromBottom2;
 }
 
 
@@ -458,18 +458,18 @@ footer p {
 		display: block;
 	}
 	#wrap {
-		width: 98%;
+		width: 99%;
 		margin: auto;
 		margin-bottom: 140px;
 	}
 	h1 {
-		font-size: 2.7em;
+		font-size: 2.9em;
 	}
 	h2 {
-		font-size: 2.5em;
+		font-size: 2.7em;
 	}
 	.content-text {
-		font-size: 2.2em;
+		font-size: 2.4em;
 	}
 	footer {
 		width: 100%;
