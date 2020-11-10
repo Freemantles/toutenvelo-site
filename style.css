@@ -118,7 +118,7 @@ body {
 
 
 #menu {
-	padding-top: 30px;
+	padding-top: 10px;
 	display: flex;
     flex-direction: column;
     padding-bottom: 20px;
@@ -129,7 +129,7 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: 'Rubik', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	transition: border-bottom .4s ease;
 	padding-top: 30px;
 	margin-top: 10px;
@@ -163,10 +163,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding-top: 5px;
-	margin-top: 30px;
-	margin-bottom: 10px;
-	align-items: flex-end;
-	padding-right: 20px;
+	margin-top: 20px;
+	align-items: center;
 }
 
 #contacts-home * {
@@ -175,13 +173,13 @@ body {
 }
 
 #contacts-home > a > img {
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
 }
 
 .contacts-home-text {
 	color: black;
-	font-size: 0.9em;
+	font-size: 0.85em;
 	font-family: 'Rubik', sans-serif;
 	text-transform: uppercase;
 	border-bottom: solid 2px #DE5803;
