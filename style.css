@@ -1,95 +1,7 @@
-/*FONTS*/
 
-@font-face{
-    font-family: "Helvetica";
-    src: url('Helvetica.ttf');
-}
 
-@font-face{
-    font-family: "Lato";
-    src: url('Lato-Regular.ttf');
-}
 
-@font-face{
-    font-family: "Raleway";
-    src: url('Raleway-VariableFont_wght.ttf');
-}
-
-@font-face{
-    font-family: "Hamburg-Hand-Regular";
-    src: url('HamburgHand-Regular.otf');
-}
-
-@font-face{
-    font-family: "abeatbyKai";
-    src: url('abeatbyKaiRegular.otf');
-}
-
-@font-face{
-    font-family: "Hamburg-Hand-Light";
-    src: url('HamburgHand-Light.otf');
-}
-
-@font-face{
-    font-family: "Montserrat";
-    src: url('Montserrat-Regular.ttf');
-}
-
-@font-face{
-    font-family: "Work Sans";
-    src: url('WorkSans-Regular.ttf');
-}
-
-/*GENERAL*/
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	background-color: rgba(255, 255, 255, 1);
-	font-size: 16px;
-}
-
-/*PAGE*/
-
-/*First contact*/
-
-.homeimg {
-	width: 100vw;
-	height: 100vh;
-	max-height: 100%;
-	max-width: 100%;
-  	background-image: url("suba1.jpg");
-  	background-size: cover;
-  	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
-  	position: relative;
-  	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-/*Logo mobile*/
-
-#logo-wrap-mobile {
-	position: absolute;
-	width: 280px;
-	height: 280px;
-	top: 25%;
-	left: 50%;
-	margin-top: -115px; /* Negative half of height. */
-	margin-left: -115px; /* Negative half of width. */
-	display: none;
-}
-
-.logo-mobile {
-	max-height: 100%;
-}
-
-/*Nav*/
+/* Animations*/
 
 @keyframes slideInFromLeft {
   0% {
@@ -120,18 +32,69 @@ body {
 }
 
 
+
+/*GENERAL*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+p {
+	color: #333;
+}
+
+
+
+/*PAGE*/
+
+/*Fullpage image*/
+
+.homeimg {
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+  	background-image: url("suba1.jpg");
+  	background-size: cover;
+  	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  	position: relative;
+}
+
+/*Logo mobile*/
+
+#logo-wrap-mobile {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-top: -110px; /* Negative half of img height. */
+	margin-left: -110px; /* Negative half of img width. */
+	display: none;
+}
+
+
+
+/*NAV*/
+
+/*Desktop navigation*/
+
 #fullnav {
+	position: fixed;
 	left: 0;
 	top: 0;
 	height: 100vh;
 	width: 16%;
     display: flex;
     flex-direction: column;
-    position: fixed;
     padding-top: 30px;
-    animation: .6s ease-out 0s 1 slideInFromLeft;
     background-color: rgba(245, 245, 245, 0.9);
     box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+    animation: .6s ease-out 0s 1 slideInFromLeft;
 }
 
 #logo-wrap {
@@ -146,28 +109,25 @@ body {
 	border-radius: 160px;
 }
 
-
 #menu {
 	padding-top: 10px;
 	display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
 }
 
 .navitem {
-	color: black;
+	width: 95%;
+	margin-right: 5%;
+	color: #333;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: 'Rubik', sans-serif;
 	font-size: 1.2em;
-	transition: border-bottom .4s ease;
+	text-align: right;
 	padding-top: 30px;
 	margin-top: 10px;
 	padding-right: 2px;
-	text-align: right;
-	border-bottom: solid 3px rgba(31, 31, 31, 0.3);;
-	width: 95%;
-	margin-right: 5%;
+	border-bottom: solid 3px rgba(31, 31, 31, 0.3);
 	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;
  	text-rendering: optimizeLegibility;
@@ -189,26 +149,25 @@ body {
   width: 100%; 
 }
 
-#contacts-home {
+#contacts-nav {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding-top: 5px;
 	margin-top: 20px;
-	align-items: center;
 }
 
-#contacts-home * {
+#contacts-nav * {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
-#contacts-home > a > img {
-	width: 35px;
+#contacts-nav > a > img {
 	height: 35px;
 }
 
-.contacts-home-text {
-	color: black;
+.contacts-nav-text {
+	color: #333;
 	font-size: 1em;
 	font-family: 'Rubik', sans-serif;
 	text-transform: uppercase;
@@ -217,11 +176,6 @@ body {
  	-moz-osx-font-smoothing: grayscale;
  	text-rendering: optimizeLegibility;
  	text-shadow: rgba(0,0,0,.01) 0 0 1px;
-}
-
-#fb-btn {
-	margin-top: 0;
-	padding-left: 0;
 }
 
 
@@ -238,73 +192,39 @@ body {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	background-color: rgba(245, 245, 245, 0.95);
 	animation: .6s ease-out 0s 1 slideInFromBottom;
+	grid-template-columns: 20% 60% 20%;
+	justify-items: center;
 	align-items: center;
 	display: none;
 }
 
-#contacts-home-mobile {
-	width: 50%;
-	display: flex;
-	margin-left: 30px;
+#mobilenav > div > a > img {
+	height: 50px;
 }
 
-#contacts-mobilenav {
+#contacts-nav-mobile {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	margin-left: 10px;
+	justify-content: space-around;
+	margin-right: 100px;
 }
 
-#contacts-mobilenav a {
-	display: flex;
-	flex-direction: row;
-}
-
-.contacts-home-text-mobile {
-	color: black;
-	font-size: 1.2em;
+#contacts-nav-mobile > a {
 	font-family: 'Rubik', sans-serif;
 	text-transform: uppercase;
-	-webkit-font-smoothing: antialiased;
- 	-moz-osx-font-smoothing: grayscale;
- 	text-rendering: optimizeLegibility;
- 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
- 	margin-bottom: 5px;
- 	margin-top: 7px;
- 	border-bottom: solid 2px #DE5803;
- 	text-decoration: none;
+	text-decoration: none;
+	color: #333;
+	margin-bottom: 6px;
+	margin-top: 4px;
 }
 
-#contacts-home-mobile > a > img {
-	height: 80px;
+#contacts-mobile-icons {
+	display: none;
 }
-
 
 #hamb-menu {
-	height: 50%;
-	width: 25%;
-	margin-left: 150px;
+	height: 45px;
 }
-
-#fb-btn-mobile {
-	display: flex;
-	align-items: center;
-}
-
-#mobile-nav-popup {
-	position: fixed;
-	width: 70%;
-	height: 200px; 
-	left: 50%;
-	bottom: 200px;
-	margin-left: -35%;
-	background-color: rgba(245, 245, 245, 0.95);
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-	display: none;
-	animation: .3s ease-out 0s 1 slideInFromBottom2;
-}
-
-
 
 /*CONTENT*/
 
@@ -356,7 +276,7 @@ h2 {
 }
 
 .content-text {
-	font-family: "Work Sans";
+	font-family: 'Work Sans', sans-serif;
 	font-size: 1.1em;
 	text-align: center;
 	line-height: 1.4;
@@ -448,7 +368,7 @@ footer p {
 	}
 
 	#mobilenav {
-		display: flex;
+		display: grid;
 	}
 
 	#fullnav {
@@ -494,5 +414,25 @@ footer p {
 	.content-text {
 		font-size: 1.1em;
 		text-size-adjust: none;
+	}
+	#contacts-mobilenav {
+		display: none;
+	}
+	#hamb-menu {
+		margin-left: 20px;
+	}
+	#contacts-home-mobile {
+		justify-content: space-around;
+	}
+	#contacts-mobile-icons {
+		display: flex;
+		width: 25%;
+	}
+	#contacts-mobile-icons img {
+		width: 100%;
+	}
+	#fb-btn-mobile {
+		width: 25%;
+		height: 80%;
 	}
 }
