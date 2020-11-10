@@ -470,6 +470,7 @@ footer p {
 	}
 	.content-text {
 		font-size: 18px;
+		text-size-adjust: none;
 	}
 	footer {
 		width: 100%;
