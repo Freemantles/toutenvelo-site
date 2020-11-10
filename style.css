@@ -67,6 +67,9 @@ body {
   	background-size: cover;
   	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
   	position: relative;
+  	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 /*Logo mobile*/
@@ -455,7 +458,7 @@ footer p {
 		display: block;
 	}
 	#wrap {
-		width: 95%;
+		width: 98%;
 		margin: auto;
 		margin-bottom: 140px;
 	}
