@@ -36,20 +36,21 @@
 }
 
 @font-face{
-    font-family: "Oswald";
-    src: url('Oswald.ttf');
-}
-
-@font-face{
     font-family: "Work Sans";
     src: url('WorkSans-Regular.ttf');
 }
 
 /*GENERAL*/
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	background-color: rgba(255, 255, 255, 1);
 }
 
 /*PAGE*/
@@ -62,21 +63,11 @@ body {
 	max-width: 100%;
   	background-image: url("suba1.jpg");
   	background-size: cover;
+  	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 /*Logo*/
 
-#logo-wrap {
-	display: flex;
-	padding-left: 12px;
-}
-
-.logo {
-	width: 210px;
-	height: 210px;
-	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-	border-radius: 160px;
-}
 
 /*Nav*/
 
@@ -89,77 +80,98 @@ body {
   }
 }
 
-@keyframes slideInFromBT {
+@keyframes slideInFromFar {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-1000%);
   }
-  50% {
-  	transform: translateX(150%);
-  }
-
   100% {
     transform: translateX(0);
   }
 }
 
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 #fullnav {
+	left: 0;
+	top: 0;
 	height: 100vh;
-	min-width: 250px;
+	width: 15%;
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 0;
-    padding-top: 20px;
+    padding-top: 30px;
     animation: .6s ease-out 0s 1 slideInFromTop;
-    box-shadow: 0px 4px rgba(0,0,0, 0.3);
-    background-color: rgba(255,255,255, 0.85);
+    background-color: rgba(245, 245, 245, 0.9);
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#logo-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	width: 210px;
+	height: 210px;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+	border-radius: 160px;
+}
+
+
+#menu {
+	padding-top: 30px;
+	display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
 }
 
 .navitem {
 	color: black;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-family: "Oswald";
+	font-family: 'Rubik', sans-serif;
 	font-size: 1.2em;
-	transition: color .4s;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 12px;
-	font-weight: 350;
-	letter-spacing: 1px;
-
+	transition: border-bottom .4s ease;
+	padding-top: 30px;
+	margin-top: 10px;
+	padding-right: 2px;
+	text-align: right;
+	border-bottom: solid 3px rgba(31, 31, 31, 0.3);;
+	width: 95%;
+	margin-right: 5%;
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ 	text-rendering: optimizeLegibility;
+ 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
-.navitem:not(:last-child) {
-	border-bottom: solid 1px black;
+.navitem:after {
+	content: "";
+  	display: block;
+  	border-bottom: 3px solid #DE5803;
+  	width: 0;
+  	position: absolute;
+  	right: 4%;
+  	-webkit-transition: .8s ease;
+  	transition: .8s ease;
 }
 
-.navitem:hover {
-	color: #DE5803;
+.navitem:hover:after { 
+  width: 100%; 
 }
 
 #contacts-home {
 	display: flex;
 	flex-direction: column;
 	padding-top: 5px;
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 10px;
-	padding-right: 30px;
+	align-items: flex-end;
+	padding-right: 20px;
 }
 
 #contacts-home * {
-	margin-top: 3px;
-	margin-bottom: 2px;
-	padding-left: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #contacts-home > a > img {
@@ -169,11 +181,14 @@ body {
 
 .contacts-home-text {
 	color: black;
-	font-size: 1em;
-	font-family: "Oswald";
+	font-size: 0.9em;
+	font-family: 'Rubik', sans-serif;
 	text-transform: uppercase;
-	font-weight: 350;
-	letter-spacing: 1px;
+	border-bottom: solid 2px #DE5803;
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ 	text-rendering: optimizeLegibility;
+ 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 
 #fb-btn {
@@ -185,40 +200,36 @@ body {
 
 #wrap {
 	width: 60vw;
-	margin-left: 22vw;
-	margin-right: 18vw;
-	margin-top: 70px;
+	margin-left: 25vw;
+	margin-right: 15vw;
+	max-width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .content-box {
-	margin-top: 150px;
-	margin-bottom: 150px;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
 h1 {
 	text-align: center;
-	font-family: "Montserrat";
+	font-family: 'Montserrat', sans-serif;
 	margin-bottom: 60px;
 	text-transform: uppercase;
 	font-size: 1.8em;
 	color: #DE5803;
-	font-weight: normal;
+	letter-spacing: 1px;
 }
 
 h2 {
 	text-align: center;
-	font-family: "Montserrat";
-	margin-bottom: 40px;
-	font-size: 1.6em;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 1.5em;
 	color: #DE5803;
-	font-weight: normal;
-}
-
-#presentation-text {
-	font-family: "Work Sans";
-	font-size: 1.3em;
-	text-align: center;
-	line-height: 1.4;
+	text-transform: uppercase;
 }
 
 #partner-box {
@@ -235,41 +246,29 @@ h2 {
 	margin-left: 25px;
 }
 
-#contacts-box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-#contacts-logo {
-	height: 200px;
-	width: 200px;
-	margin-bottom: 40px;
-}
-
-#contacts-text {
-	font-size: 1.4em;
-	font-family: "Montserrat";
-}
-
 .content-text {
 	font-family: "Work Sans";
-	font-size: 1.3em;
+	font-size: 1.2em;
 	text-align: center;
+	line-height: 1.4;
+	width: 80%;
+	margin:auto;
 }
 
 footer {
-	background-color: black;
+	background-color: rgba(31, 31, 31, 1);
+	position: relative;
+	width: 85%;
+	margin-left:15%;
+	box-shadow: 3px -5px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	color: white;
 	text-align: center;
+	margin:0;
 	font-family: "Montserrat";
-	margin-bottom: 0;
-	padding-top: 5px;
 	padding-bottom: 5px;
-	margin: 0;
+	padding-top: 10px;
 }
