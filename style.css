@@ -64,14 +64,29 @@ body {
   	background-image: url("suba1.jpg");
   	background-size: cover;
   	box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  	position: relative;
 }
 
-/*Logo*/
+/*Logo mobile*/
 
+#logo-wrap-mobile {
+	position: absolute;
+	width: 230px;
+	height: 230px;
+	top: 25%;
+	left: 50%;
+	margin-top: -115px; /* Negative half of height. */
+	margin-left: -115px; /* Negative half of width. */
+	display: none;
+}
+
+.logo-mobile {
+	max-height: 100%;
+}
 
 /*Nav*/
 
-@keyframes slideInFromTop {
+@keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
@@ -80,12 +95,12 @@ body {
   }
 }
 
-@keyframes slideInFromFar {
+@keyframes slideInFromBottom {
   0% {
-    transform: translateX(-1000%);
+    transform: translateY(100%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -94,12 +109,12 @@ body {
 	left: 0;
 	top: 0;
 	height: 100vh;
-	width: 15%;
+	width: 16%;
     display: flex;
     flex-direction: column;
     position: fixed;
     padding-top: 30px;
-    animation: .6s ease-out 0s 1 slideInFromTop;
+    animation: .6s ease-out 0s 1 slideInFromLeft;
     background-color: rgba(245, 245, 245, 0.9);
     box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -110,8 +125,8 @@ body {
 }
 
 .logo {
-	width: 180px;
-	height: 180px;
+	width: 220px;
+	height: 220px;
 	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 	border-radius: 160px;
 }
@@ -129,7 +144,7 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: 'Rubik', sans-serif;
-	font-size: 1.05em;
+	font-size: 1.2em;
 	transition: border-bottom .4s ease;
 	padding-top: 30px;
 	margin-top: 10px;
@@ -173,13 +188,13 @@ body {
 }
 
 #contacts-home > a > img {
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 }
 
 .contacts-home-text {
 	color: black;
-	font-size: 0.8em;
+	font-size: 1em;
 	font-family: 'Rubik', sans-serif;
 	text-transform: uppercase;
 	border-bottom: solid 2px #DE5803;
@@ -194,13 +209,64 @@ body {
 	padding-left: 0;
 }
 
+
+
+/*Mobile Nav*/
+
+#mobilenav {
+	position: fixed;
+	width: 70%;
+	height: 100px; 
+	left: 50%;
+	bottom: 150px;
+	margin-left: -35%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	background-color: rgba(245, 245, 245, 0.95);
+	animation: .6s ease-out 0s 1 slideInFromBottom;
+	align-items: center;
+	display: none;
+}
+
+#contacts-home-mobile {
+	width: 50%;
+	display: flex;
+	margin-left: 40px;
+}
+
+.contacts-home-text-mobile {
+	color: black;
+	font-size: 1.05em;
+	font-family: 'Rubik', sans-serif;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ 	text-rendering: optimizeLegibility;
+ 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+#contacts-home-mobile > a > img {
+	height: 70px;
+}
+
+#hamb-menu {
+	height: 50%;
+	width: 25%;
+	margin-left: 40px;
+}
+
+#fb-btn-mobile {
+	display: flex;
+	align-items: center;
+}
+
+
+
 /*CONTENT*/
 
 #wrap {
-	width: 60vw;
-	margin-left: 25vw;
-	margin-right: 15vw;
-	max-width: 100%;
+	width: 60%;
+	margin-left: 28%;
+	margin-right: 12%;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -256,8 +322,8 @@ h2 {
 footer {
 	background-color: rgba(31, 31, 31, 1);
 	position: relative;
-	width: 85%;
-	margin-left:15%;
+	width: 84%;
+	margin-left: 16%;
 	box-shadow: 3px -5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -269,4 +335,90 @@ footer p {
 	font-family: "Montserrat";
 	padding-bottom: 5px;
 	padding-top: 10px;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*Default is built for 1701px and more screens*/
+
+/* 1401px-1700px */
+
+@media screen and (max-width: 1700px) {
+	#fullnav {
+		width: 19%;
+	}
+	.contacts-home-text {
+		font-size: 0.95em;
+	}
+	.navitem {
+		font-size: 1.1em;
+	}
+	#wrap {
+		margin-left: 29.5%;
+		margin-right: 10.5%;
+	}
+	footer {
+		width: 81%;
+		margin-left: 19%;
+	}
+}
+
+
+/* 1250px-1400px */
+
+@media screen and (max-width: 1400px) {
+	.homeimg {
+	background-image: url("suba-cut2.jpg");
+	}
+	#fullnav {
+		width: 21%;
+	}
+	.logo {
+		width: 210px;
+		height: 210px;
+	}
+	.navitem {
+		font-size: 1.05em;
+	}
+	.contacts-home-text {
+		font-size: 0.9em;
+	}
+	#wrap {
+		margin-left: 30.5%;
+		margin-right: 9.5%;
+	}
+	footer {
+		width: 79%;
+		margin-left: 21%;
+	}
+}
+
+
+/* 1155px - 1399px - MOBILE NAVIGATION */
+
+@media screen and (max-width: 1200px) {
+	.homeimg {
+	background-image: url("suba-cut.jpg");
+	}
+
+	#mobilenav {
+		display: flex;
+	}
+
+	#fullnav {
+		display:none;
+	}
+	#logo-wrap-mobile {
+	display: block;
+	}
+	#wrap {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 120px;
+	}
+	footer {
+		width: 100%;
+		margin: 0;
+	}
 }
