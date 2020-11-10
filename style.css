@@ -463,15 +463,15 @@ footer p {
 		margin-bottom: 140px;
 	}
 	h1 {
-		font-size: 2.1em;
+		font-size: 22px;
 		text-size-adjust: none;
 	}
 	h2 {
-		font-size: 1.8em;
+		font-size: 20px;
 		text-size-adjust: none;
 	}
 	.content-text {
-		font-size: 1.4em;
+		font-size: 18px;
 		text-size-adjust: none;
 	}
 	footer {
@@ -484,15 +484,15 @@ footer p {
 
 @media screen and (max-width: 800px) {
 	h1 {
-		font-size: 3em;
+		font-size: 22px;
 		text-size-adjust: none;
 	}
 	h2 {
-		font-size: 2.6em;
+		font-size: 20px;
 		text-size-adjust: none;
 	}
 	.content-text {
-		font-size: 2.3em;
+		font-size: 18px;
 		text-size-adjust: none;
 	}
 }
