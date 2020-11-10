@@ -410,7 +410,7 @@ footer p {
 }
 
 
-/* 1250px-1400px */
+/* 1156px-1400px */
 
 @media screen and (max-width: 1400px) {
 	.homeimg {
@@ -440,9 +440,9 @@ footer p {
 }
 
 
-/* 1155px - 1399px - MOBILE NAVIGATION */
+/* 801px - 1155px - MOBILE NAVIGATION */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1155px) {
 	.homeimg {
 	background-image: url("suba-cut.jpg");
 	}
@@ -463,17 +463,36 @@ footer p {
 		margin-bottom: 140px;
 	}
 	h1 {
-		font-size: 30px;
+		font-size: 2.1em;
+		text-size-adjust: none;
 	}
 	h2 {
-		font-size: 25px;
+		font-size: 1.8em;
+		text-size-adjust: none;
 	}
 	.content-text {
-		font-size: 18px;
+		font-size: 1.4em;
 		text-size-adjust: none;
 	}
 	footer {
 		width: 100%;
 		margin: 0;
+	}
+}
+
+/*  799px and less*/
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 2.7em;
+		text-size-adjust: none;
+	}
+	h2 {
+		font-size: 2.3em;
+		text-size-adjust: none;
+	}
+	.content-text {
+		font-size: 1.9em;
+		text-size-adjust: none;
 	}
 }
