@@ -452,10 +452,10 @@ footer p {
 		display:none;
 	}
 	#logo-wrap-mobile {
-	display: block;
+		display: block;
 	}
 	#wrap {
-		width: 80%;
+		width: 95%;
 		margin: auto;
 		margin-bottom: 140px;
 	}
@@ -466,7 +466,7 @@ footer p {
 		font-size: 2.5em;
 	}
 	.content-text {
-		font-size: 2.2;
+		font-size: 2.2em;
 	}
 	footer {
 		width: 100%;
