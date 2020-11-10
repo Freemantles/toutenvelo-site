@@ -228,7 +228,7 @@ body {
 #mobilenav {
 	position: fixed;
 	width: 70%;
-	height: 120px; 
+	height: 140px; 
 	left: 50%;
 	bottom: 100px;
 	margin-left: -35%;
@@ -249,7 +249,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 #contacts-mobilenav a {
@@ -259,7 +259,7 @@ body {
 
 .contacts-home-text-mobile {
 	color: black;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-family: 'Rubik', sans-serif;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
@@ -273,7 +273,7 @@ body {
 }
 
 #contacts-home-mobile > a > img {
-	height: 80px;
+	height: 100px;
 }
 
 
@@ -460,13 +460,13 @@ footer p {
 		margin-bottom: 140px;
 	}
 	h1 {
-		font-size: 2.5em;
+		font-size: 2.7em;
 	}
 	h2 {
-		font-size: 2.3em;
+		font-size: 2.5em;
 	}
 	.content-text {
-		font-size: 1.9em;
+		font-size: 2.2;
 	}
 	footer {
 		width: 100%;
