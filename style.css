@@ -476,9 +476,10 @@ footer p {
 		display: none;
 	}
 	footer {
-		margin-bottom: 100px;
+		margin-bottom: 110px;
 	}
 	footer p {
 		width: 98%;
+		font-size: 0.75em;
 	}
 }
