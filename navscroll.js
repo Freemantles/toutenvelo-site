@@ -1,12 +1,15 @@
 function toggleMenu() {
   var menuBox = document.getElementById('mobile-nav-popup');
-  var menuIcon = document.getElementById('hamb-menu');
+  var menuIconOpen = document.getElementById('hamb-menu-open');
+  var menuIconClose = document.getElementById('hamb-menu-close');
   if(menuBox.style.display == "none") {
-    menuBox.style.display = "block";
-    menuIcon.src = "close.svg"
+    menuBox.style.display = "flex";
+    menuIconOpen.style.opacity = "0"
+    menuIconClose.style.opacity = "1"
   }
   else {
     menuBox.style.display = "none";
-    menuIcon.src = "mobile-menu.svg"
+    menuIconOpen.style.opacity = "1"
+    menuIconClose.style.opacity = "0"
   }
 }
