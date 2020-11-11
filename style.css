@@ -199,23 +199,27 @@ p {
 }
 
 #mobilenav > div > a > img {
-	height: 50px;
+	height: 60px;
 }
 
 #contacts-nav-mobile {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-right: 100px;
+	margin-right: 80px;
+	margin-left: 20px;
 }
 
 #contacts-nav-mobile > a {
+	display: table-cell;
+	font-size: 1.25em;
 	font-family: 'Rubik', sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #333;
-	margin-bottom: 6px;
-	margin-top: 4px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	border-bottom: solid 2px #DE5803;
 }
 
 #contacts-mobile-icons {
@@ -223,7 +227,7 @@ p {
 }
 
 #hamb-menu {
-	height: 45px;
+	height: 50px;
 }
 
 /*CONTENT*/
@@ -400,6 +404,14 @@ footer p {
 	}
 }
 
+/* 801px - 1000px - MOBILE NAVIGATION */
+
+@media screen and (max-width: 1000px) {
+	#contacts-nav-mobile > a {
+		font-size: 1.2em;
+	}
+}
+
 /*  799px and less*/
 
 @media screen and (max-width: 800px) {
@@ -415,7 +427,7 @@ footer p {
 		font-size: 1.1em;
 		text-size-adjust: none;
 	}
-	#contacts-mobilenav {
+	#contacts-nav-mobile {
 		display: none;
 	}
 	#hamb-menu {
