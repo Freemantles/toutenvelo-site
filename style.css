@@ -480,6 +480,8 @@ footer p {
 	}
 	footer p {
 		width: 96%;
-		font-size: 0.7em;
+		font-size: 0.75em;
+		margin-top: 4px;
+		margin-bottom: 4px;
 	}
 }
