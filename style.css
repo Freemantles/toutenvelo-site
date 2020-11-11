@@ -222,7 +222,7 @@ p {
 	border-bottom: solid 2px #DE5803;
 }
 
-#contacts-mobile-icons {
+#mobilenav > a {
 	display: none;
 }
 
@@ -307,6 +307,7 @@ footer p {
 }
 
 
+
 /*MEDIA QUERIES*/
 
 /*Default is built for 1701px and more screens*/
@@ -332,6 +333,7 @@ footer p {
 		margin-left: 19%;
 	}
 }
+
 
 
 /* 1156px-1400px */
@@ -362,6 +364,7 @@ footer p {
 		margin-left: 21%;
 	}
 }
+
 
 
 /* 801px - 1155px - MOBILE NAVIGATION */
@@ -404,6 +407,8 @@ footer p {
 	}
 }
 
+
+
 /* 801px - 1000px - MOBILE NAVIGATION */
 
 @media screen and (max-width: 1000px) {
@@ -411,6 +416,8 @@ footer p {
 		font-size: 1.2em;
 	}
 }
+
+
 
 /*  799px and less*/
 
@@ -427,24 +434,24 @@ footer p {
 		font-size: 1.1em;
 		text-size-adjust: none;
 	}
-	#contacts-nav-mobile {
-		display: none;
+	#mobilenav {
+		bottom: 50px;
+		height: 50px;
+		grid-template-columns: 25% 25% 25% 25%;
+	}
+	#mobilenav > a {
+	display: flex;
+	}
+	#mobilenav > a > img {
+	height: 30px;
 	}
 	#hamb-menu {
-		margin-left: 20px;
+	height: 30px;
 	}
-	#contacts-home-mobile {
-		justify-content: space-around;
+	#mobilenav > div > a > img {
+	height: 30px;
 	}
-	#contacts-mobile-icons {
-		display: flex;
-		width: 25%;
-	}
-	#contacts-mobile-icons img {
-		width: 100%;
-	}
-	#fb-btn-mobile {
-		width: 25%;
-		height: 80%;
+	#contacts-nav-mobile {
+		display: none;
 	}
 }
