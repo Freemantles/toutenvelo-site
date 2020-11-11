@@ -550,6 +550,10 @@ footer p {
 		justify-items: center;
 		align-items: center;
 	}
+	.partner-logo {
+		max-width: 130px;
+		margin-bottom: 20px;
+	}
 	footer {
 		margin-bottom: 110px;
 	}
