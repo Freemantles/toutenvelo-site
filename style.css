@@ -434,10 +434,19 @@ footer p {
 		font-size: 1.1em;
 		text-size-adjust: none;
 	}
+	#logo-wrap-mobile {
+		margin-left: -75px;
+		margin-right: -75px;
+	}
+	.logo {
+		height: 150px;
+		width: 150px;
+	}
 	#mobilenav {
-		bottom: 50px;
+		bottom: 35px;
 		height: 50px;
 		grid-template-columns: 25% 25% 25% 25%;
+		z-index: 100;
 	}
 	#mobilenav > a {
 	display: flex;
