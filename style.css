@@ -329,10 +329,10 @@ h2 {
 }
 
 #partner-box {
-	display: flex;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	justify-items: center;
 	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .partner-logo {
@@ -543,6 +543,12 @@ footer p {
 		margin-left: -40%;
 		bottom: 85px;
 		animation: .5s ease-out 0s 1 appear;
+	}
+	#partner-box {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		justify-items: center;
+		align-items: center;
 	}
 	footer {
 		margin-bottom: 110px;
